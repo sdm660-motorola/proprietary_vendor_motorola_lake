@@ -6,9 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/lake
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/lake/proprietary/system/etc/permissions/com.motorola.camera2.denali.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.camera2.denali.xml \
-    vendor/motorola/lake/proprietary/system/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
-    vendor/motorola/lake/proprietary/system/etc/permissions/privapp-permissions-com.motorola.camera2.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.motorola.camera2.xml \
     vendor/motorola/lake/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
     vendor/motorola/lake/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/motorola/lake/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
@@ -497,7 +494,4 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/lake/proprietary/vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.egistec.hardware.fingerprint@2.0.so
 
 PRODUCT_PACKAGES += \
-    MotoSignatureApp \
-    MotCamera2 \
-    ims \
-    com.motorola.motosignature
+    ims
